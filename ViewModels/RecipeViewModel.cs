@@ -1,5 +1,5 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using exam_poo.Models;
+using MauiRecipe.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +9,13 @@ using System.Threading.Tasks;
 namespace exam_poo.ViewModel
 {
     //recipes lignes 15 se trouve dans l'autre partial de la classe, on met "partial" pour éviter l'erreur
-    public partial class RecipeViewModel : ObservableObject
-    {
-        [ObservableProperty]
-        List<Recipe> recipes;
-    }
+    
+    //public partial class RecipeViewModel : ObservableObject
+    //{
+    //    [ObservableProperty]
+    //    list<recipe> recipes;
+    //}
+    
     //public RecipeViewModel()
     //{
     //    LoadRecipes();
@@ -22,7 +24,6 @@ namespace exam_poo.ViewModel
     //private void LoadRecipes()
     //{
         //vient de ligne 14 [observableproperty]
-        
         //Recipes = new()
         //{
         //new recipe(

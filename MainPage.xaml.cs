@@ -1,25 +1,17 @@
-﻿using exam_poo.DataServices;
-using exam_poo.ViewModel;
-using Microsoft.Maui.Controls;
+﻿using MauiRecipe.ViewModels;
 
-namespace exam_poo;
+namespace MauiRecipe;
 
 public partial class MainPage : ContentPage
 {
-    private IRestDataService _dataService;
-
-    public MainPage(IRestDataService dataService)
+	//Contient Page principale et les méthodes
+	public MainPage()
 	{
 		InitializeComponent();
 
-        _dataService = dataService;
+		BindingContext = new MyBreakfastsViewModel();
+	}
 
-		BindingContext = new RecipeViewModel();
-    }
-	//private void searchbar_textchanged(object sender, textchangedeventargs e)
-	//{
-	//	mylistview.itemssource mylist.where(s => s.name.startswith(e.newtextvalue));
-	//}
 	
 }
 

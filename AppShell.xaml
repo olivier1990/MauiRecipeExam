@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="exam_poo.AppShell"
+    x:Class="MauiRecipe.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:exam_poo"
+    xmlns:local="clr-namespace:MauiRecipe"
     Shell.FlyoutBehavior="Disabled">
 
     <ShellContent
-        Title="Recherchez vos recettes !"
+        Title="Maui-Recipe"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

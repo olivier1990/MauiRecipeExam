@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace exam_poo;
+namespace MauiRecipe;
 
 [Application]
 public class MainApplication : MauiApplication

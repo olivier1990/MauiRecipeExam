@@ -1,7 +1,6 @@
-﻿using exam_poo.DataServices;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.Extensions.Logging;
 
-namespace exam_poo;
+namespace MauiRecipe;
 
 public static class MauiProgram
 {
@@ -16,16 +15,8 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-        //builder.Services.AddHttpClient<IRestDataService, RestDataService>();
-
-        //Ajout en Global Interface du RestData et class RestData
-        builder.Services.AddSingleton<IRestDataService, RestDataService>();
-
-		//Ajout en singleton pour injection dépendance
-		builder.Services.AddSingleton<MainPage>();
-
 #if DEBUG
-        builder.Logging.AddDebug();
+		builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

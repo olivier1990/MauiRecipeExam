@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace MauiRecipe.Models
 {
-    public class Recipe : INotifyPropertyChanged
+    // INotifyPropertyChanged gère évenement/Event
+    public class ToDo : INotifyPropertyChanged
     {
         int _id;
         public int Id
@@ -15,6 +16,7 @@ namespace MauiRecipe.Models
             get => _id;
             set
             {
+                // Si _id == value alors on return, else on set 
                 if (_id == value)
                     return;
 
@@ -24,18 +26,18 @@ namespace MauiRecipe.Models
         }
 
 
-        string _recipename;
+        string _todoname;
 
-        public string RecipeName
+        public string ToDoName
         {
-            get => _recipename;
+            get => _todoname;
             set
             {
-                if (_recipename == value)
+                if (_todoname == value)
                     return;
 
-                _recipename = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(RecipeName)));
+                _todoname = value;
+                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(ToDoName)));
             }
         }
 

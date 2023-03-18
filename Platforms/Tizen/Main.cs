@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace exam_poo;
+namespace MauiRecipe;
 
 class Program : MauiApplication
 {

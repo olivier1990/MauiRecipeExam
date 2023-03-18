@@ -1,4 +1,4 @@
-﻿namespace exam_poo;
+﻿namespace MauiRecipe;
 
 public partial class AppShell : Shell
 {

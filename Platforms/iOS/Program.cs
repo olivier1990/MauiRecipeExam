@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace exam_poo;
+namespace MauiRecipe;
 
 public class Program
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using exam_poo.Models;
+using MauiRecipe.Models;
 
 namespace exam_poo.DataServices
 {

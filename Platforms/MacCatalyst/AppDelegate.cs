@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace exam_poo;
+namespace MauiRecipe;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate
