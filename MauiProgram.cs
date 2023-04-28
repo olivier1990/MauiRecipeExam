@@ -26,7 +26,7 @@ public static class MauiProgram
         builder.Services.AddTransient<DetailsPage>();
 
 
-
+//Faut-il enlever ceci lorsque l'app est released ?
 #if DEBUG
         builder.Logging.AddDebug();
 #endif

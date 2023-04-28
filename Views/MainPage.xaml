@@ -4,10 +4,10 @@
              
              x:Class="MauiRecipe.Views.MainPage"
              
-             xmlns:viewmodels="clr-namespace:MauiRecipe.ViewModels"
+             xmlns:viewmodel="clr-namespace:MauiRecipe.ViewModels"
              xmlns:models="clr-namespace:MauiRecipe.Models"
              
-             x:DataType="viewmodels:ProductsViewModel"
+             x:DataType="viewmodel:ProductsViewModel"
              
              Title="{Binding Title}"             
              >
@@ -50,7 +50,7 @@
                                 <Frame.GestureRecognizers>
                                     <!--Binding de l'objet courant qui est product au dessus, GoToDetailsCommand est du source generator-->
                                     <TapGestureRecognizer CommandParameter="{Binding .}"
-                                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodels:ProductsViewModel}}, Path=GoToDetailsCommand}" />
+                                                          Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ProductsViewModel}}, Path=GoToDetailsCommand}" />
                                 </Frame.GestureRecognizers>
 
                                 <Grid Padding="0" ColumnDefinitions="110, 160, *">

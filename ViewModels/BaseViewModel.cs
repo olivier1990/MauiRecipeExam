@@ -3,7 +3,7 @@
 // Contient la List/le Data qui se retrouve dans la VIEW
 // ObservableObject Build la propriété public pour nous
 // partial de la classe, permet de divisé la classe en 2 définition par exemple une struct et une interface
-// Utilisé quand ? lorsqu'on génère du source code automatiquement comme dans ce fichier-ci. 
+// Utilisé quand ? lorsqu'on génère du source code automatiquement comme dans ce fichier-ci ou pour des gros projets. 
 public partial class BaseViewModel: ObservableObject
 {
     public BaseViewModel()
@@ -17,6 +17,6 @@ public partial class BaseViewModel: ObservableObject
 
     [ObservableProperty]
     string title;
-    //Contraire de isBusy
+
     public bool IsNotBusy => !isBusy;
 }
