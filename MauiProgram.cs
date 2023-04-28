@@ -1,6 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-
-namespace MauiRecipe;
+﻿namespace MauiRecipe;
 
 public static class MauiProgram
 {
@@ -15,8 +13,22 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
+        //Mettre la page detail en AddTransient peut être ? pour ne pas l'avoir enregistré
+        builder.Services.AddSingleton<ProductService>();
+
+        builder.Services.AddSingleton<ProductsViewModel>();
+        builder.Services.AddTransient<MainPage>();
+
+        builder.Services.AddSingleton<ProductsSearchViewModel>();
+        builder.Services.AddSingleton<SearchPage>();
+
+        builder.Services.AddTransient<ProductDetailsViewModel>();
+        builder.Services.AddTransient<DetailsPage>();
+
+
+
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
 
 		return builder.Build();

@@ -1,0 +1,19 @@
+﻿global using CommunityToolkit.Mvvm.ComponentModel;
+global using CommunityToolkit.Mvvm.Input;
+global using CommunityToolkit.Mvvm.DependencyInjection;
+global using System.Net.Http.Json;
+global using System.Text.Json;
+global using System.Collections.ObjectModel;
+global using System.Diagnostics;
+global using System.ComponentModel;
+global using Microsoft.Extensions.Logging;
+global using MauiRecipe.Services;
+global using MauiRecipe.ViewModels;
+global using MauiRecipe.Models;
+global using MauiRecipe.Views;
+global using System;
+global using System.Collections.Generic;
+global using System.Linq;
+global using System.Text;
+global using System.Threading.Tasks;
+
